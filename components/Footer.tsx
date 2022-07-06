@@ -4,7 +4,7 @@ const footerItems = ["Privacy Policy", "Terms & Conditions", "Help Centre"];
 
 const Footer: React.FC = () => {
   return (
-    <HStack py={6} justifyContent="center">
+    <HStack py={6} spacing={6} justifyContent="center">
       {footerItems.map((item) => (
         <Link key={item} fontSize="sm">
           {item}

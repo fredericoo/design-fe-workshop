@@ -11,7 +11,7 @@ const Card: React.FC<CardProps> = ({ label, children }) => {
       p={4}
       border="1px solid"
       borderColor="border"
-      rounded="md"
+      borderRadius="md"
       bg="white"
     >
       <Text fontSize="md" color="neutral.500">

@@ -46,10 +46,10 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       </Stack>
       <Stack spacing={1} py={3}>
         <Text color="neutral.700">{dateTime}</Text>
-        <Text as="h3" color="neutral.800" fontWeight="semibold">
+        <Text as="h3" color="neutral.900" fontWeight="semibold">
           {name}
         </Text>
-        {extra && <Text>extra</Text>}
+        {extra && <Text color="neutral.900">{extra}</Text>}
       </Stack>
     </HStack>
   );

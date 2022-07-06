@@ -12,10 +12,10 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, buttons }) => {
   return (
     <HStack py={8}>
       <HStack>
-        <Button>
+        <Button variant="ghost" ml="-3">
           <Image src="/arrow-left.svg" alt="Arrow pointing back" />
         </Button>
-        <Heading as="h1" size="lg">
+        <Heading color="neutral.800" as="h1" size="sm" fontWeight="semibold">
           {title}
         </Heading>
       </HStack>
@@ -23,7 +23,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, buttons }) => {
         {buttons.map((button) => (
           <Button
             key={button.label}
-            leftIcon={<Image src={button.iconSrc} alt="" h="icon" w="icon" />}
+            variant="secondary"
+            leftIcon={<Image src={button.iconSrc} alt="" h="4" w="4" />}
           >
             {button.label}
           </Button>

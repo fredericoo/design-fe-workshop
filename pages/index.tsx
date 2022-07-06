@@ -1,9 +1,9 @@
 import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import Card from "./components/Card";
-import PageHeader from "./components/PageHeader";
-import Timeline from "./components/Timeline";
-import TimelineItem from "./components/TimelineItem";
+import Card from "../components/Card";
+import PageHeader from "../components/PageHeader";
+import Timeline from "../components/Timeline";
+import TimelineItem from "../components/TimelineItem";
 
 const Home: NextPage = () => {
   return (
